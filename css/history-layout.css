@@ -101,7 +101,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(41, 115, 19, 0.
 .col__image img{
     margin: 20px auto 20px auto;
     max-width: 80%;
-    
+    border-radius: 30px;    
 }
 h1{
     color: var(--dark-green);
