@@ -127,6 +127,7 @@
   font-size: 14px;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 .buttons--main {
   padding: 15px 30px;
@@ -137,6 +138,7 @@
   font-size: 14px;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 .item__3--col {
   background: rgb(248, 249, 250);
@@ -323,8 +325,6 @@
   width: 100%;
   height: auto;
   background-color: var(--dark-green);
-}
-.columns--footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -332,44 +332,41 @@
   align-items: center;
   align-content: space-around;
 }
+.footer__row--logo{
+  flex-basis: 30%;
+}
+
 .columns-1 {
   padding: 40px;
   font-family: "Poppins", sans-serif;
+  display: inline-block;
 }
 .columns-1 span{
-  color: var(--bg-color);
-}
-.columns-2 {
-  flex-basis: 60%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  padding: 40px;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer--content a {
-  display: block;
-  margin: 0px 20px 10px 0px;
-  text-align: left;
-  color: var(--bg-color);
-  text-decoration: none;
-  font-size: 15px;
-}
-.footer--content h5{
-  margin-bottom: 20px;
-  font-size: 1em;
   color: var(--bg-color);
 }
 .columns-1 p {
   color: var(--bg-color);
   margin-top: 30px;
 }
-.col__footer{
-  width: 300px;
+.columns-1 h4{
+  padding: 20px 0;
+  font-size: 1.2em;
+  color: var(--bg-color);
+  text-align: left;
+}
+.columns-1 ul {
+  list-style-type: none;
+
+}
+.columns-1 ul li {
+  margin-top: 10px;
+}
+.columns-1 ul li a{
+  color: var(--bg-color);
+  text-decoration: line-through;
+}
+.columns-1 ul li a:hover{
+  text-decoration: none;  
 }
 @media (max-width: 576px) {
   .history__row {
@@ -417,6 +414,14 @@
   .card-body {
     min-height: 200px;
   }
+  .columns-1{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .col__1--buttons .buttons--2 {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -448,7 +453,14 @@
   .columns-2 {
     flex-direction: column;
   }
-  
+  .footer{   
+    flex-direction: column;
+  }
+  .columns-1{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media (max-width: 991px) {
   .navigation__item ul li {
@@ -493,4 +505,17 @@
   .history__row1 {
     flex-direction: column;
   }
-}
+  .columns-1{
+    text-align: center;
+  }
+  .columns-1 h4{
+    text-align: center;
+  }
+  .columns-1 ul {
+    text-align: center;
+  }
+  .footer{
+    align-items: center;
+    justify-content: center;
+  }
+}   
