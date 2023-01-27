@@ -63,7 +63,7 @@
   background: var(--dark-green);
   text-decoration: none;
   border: none;
-  color: #ffffff;
+  color: var(--bg-color);
   font-size: 15px;
   font-weight: 500;
   padding: 10px 15px;
@@ -73,7 +73,7 @@
 }
 .menu--a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--bg-color);
   font-family: "Poppins", sans-serif;
 }
 .naviagtion__item__menu li a {
@@ -229,7 +229,7 @@
 .banner__content button {
   padding: 10px 35px;
   border: 1px solid #fff;
-  color: white;
+  color: var(--bg-color);
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
