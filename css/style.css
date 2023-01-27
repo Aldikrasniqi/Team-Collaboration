@@ -128,6 +128,9 @@
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
+.buttons--2 a{
+  color: var(--dark-green);
+}
 .buttons--main {
   padding: 15px 30px;
   background: none;
