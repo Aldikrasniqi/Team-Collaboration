@@ -10,7 +10,7 @@ hr{
     height: 2px;
     background-color: var(--dark-green);
     width: 95%;
-    margin: auto;
+    margin: 60px auto;
     border: none;
 }
 :root{
@@ -75,7 +75,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(41, 115, 19, 0.
 .vl {
   border-left: 2px solid var(--dark-green);
 }
-
+/* deri qetu e bon copy */
 .titulli h1 {
     margin:30px;
     font-size: 2.5em;
@@ -107,6 +107,104 @@ h1{
     color: var(--dark-green);
     font-size: 2em;
 }
+
+.title__bordi {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+.card__row{
+  display: flex;
+}
+
+.box{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+.card{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.card:before,
+.card:after
+{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index:-1;
+}
+.card:hover:before{
+
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card:hover:after{
+
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card .imgBx{
+position: absolute;
+top: 0px;
+left: 0px;
+bottom: 0px;
+right: 00px;
+background: #222;
+transition: 0.5s;
+z-index: 1;
+}
+
+.card:hover .imgBx
+{
+  bottom: 80px;
+}
+
+.card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.card .details h2{
+ margin: 0;
+ padding: 0;
+ font-weight: 600;
+ font-size: 20px;
+ color: #777;
+ text-transform: uppercase;
+} 
+
+.card .details h2 span{
+font-weight: 500;
+font-size: 16px;
+color: #f38695;
+display: block;
+margin-top: 5px;
+ } 
 @media only screen and (max-width: 600px) {
     .col{
         width: 90%;
