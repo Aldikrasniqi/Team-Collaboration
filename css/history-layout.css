@@ -1,20 +1,19 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
 }
-
 
 hr{
-    height: 2px;
-    background-color: var(--dark-green);
-    width: 95%;
-    margin: 60px auto;
-    border: none;
+  height: 2px;
+  background-color: var(--dark-green);
+  width: 95%;
+  margin: 60px auto;
+  border: none;
 }
 :root{
---blue: #007bff;
+  --blue: #007bff;
   --green: #28a745;
   --dark-green: #166941;
   --text-color: #000000;
@@ -36,7 +35,7 @@ hr{
   align-items: center;
   align-content: center;
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(41, 115, 19, 0.414) 55%, rgba(18,92,18,0.9360119047619048) 95%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(41, 115, 19, 0.414) 55%, rgba(18,92,18,0.9360119047619048) 95%);
 }
 .naviagtion__item__logo img {
   display: block;
