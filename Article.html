@@ -23,6 +23,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+    <script src="script/script.js"></script>
   </head>
   <body>
     <div class="navgiation">
@@ -45,6 +50,8 @@
         </div>
       </div>
     </div>
+    
+    
       <!-- for latter -->
     <!-- <div class="title__article mt">
       <h1>New Article</h1>
@@ -199,5 +206,14 @@
         <a href="Article.html">Learn more</a>
       </button> -->
     </div>
+
+
+
+
+    <script>
+      $('.fa-bars').click(function() {
+  $('.naviagtion__item__menu ul').toggleClass('active');
+});
+    </script>
   </body>
 </html>

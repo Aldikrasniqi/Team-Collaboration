@@ -41,6 +41,7 @@
 .pr {
   padding-right: 50px;
 }
+
 .navigation__item {
   padding: 30px;
 }
@@ -386,13 +387,12 @@
   }
   .row__columns h1 {
     font-size: 2em;
-  }
-  .navigation__item ul li {
-    display: none;
-  }
+  }  
+
   .naviagtion__item__logo img {
-    width: 350px;
+    width: 300px;
   }
+  
   .navigation__item {
     padding: 20px;
   }
@@ -487,14 +487,50 @@
 @media (max-width: 1101px) {
   .naviagtion__item__menu i {
     display: block;
+    cursor: pointer;
+    color: #595959;
     font-size: 20px;
+    margin-right: 20px;
   }
-  .navigation__item ul {
+  .naviagtion__item__menu ul {
     display: none;
   }
-  .col__2 img {
+  .naviagtion__item__menu ul.active {
     display: block;
-    flex-basis: 40%;
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: all .3s ease-in-out;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .naviagtion__item__menu li a {
+    display: block;
+    margin: 50px 40px;
+    font-size: 1.125em;
+    border-bottom: 1px solid var(--dark-green);
+  }
+  .menu--btn{
+    margin-left: 38px;
+    width: 75%;
+  }
+  .vl{
+    display: none;
+  }
+ 
+  .col__2 img {
+    display: none;
+  }
+  .col__1{
+    flex-basis: 90%;
+    text-align: center;
+  }
+  .col__1 h1{
+    font-size: 4.5em;
   }
   .history__col {
     flex-basis: 90%;
