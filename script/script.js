@@ -29,7 +29,6 @@ AOS.init({
 });
 
 // nav bar responsive
-
 $('.fa-bars').click(function() {
   $('.naviagtion__item__menu ul').toggleClass('active');
 });

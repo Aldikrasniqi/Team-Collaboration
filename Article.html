@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/ab0475dd2e.js"
       crossorigin="anonymous"
@@ -25,195 +29,57 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-
     <script src="script/script.js"></script>
   </head>
   <body>
+    <!-- navgiation  -->
     <div class="navgiation">
       <div class="navigation__item">
         <div class="naviagtion__item__logo">
           <img src="images/logo-north.png" alt="" />
         </div>
         <div class="naviagtion__item__menu">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="icon"></i>
           <ul>
             <li><a href="Historia.html">Home</a></li>
             <li><a href="#">Why Northwest?</a></li>
             <li><a href="#">Savings & Rewards</a></li>
             <li><a href="#">Pricing</a></li>
             <span class="vl"></span>
-            <button class="menu--btn">
-              <a href="#" class="menu--a">Login</a>
-            </button>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
           </ul>
         </div>
       </div>
     </div>
-    
-    
-      <!-- for latter -->
-    <!-- <div class="title__article mt">
-      <h1>New Article</h1>
+    <!-- header section -->
+    <header>
+      <div class="header__center">
+        <h1>Los Angelos</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+          eveniet blanditiis corrupti aliquam eligendi, consequuntur fuga quidem
+          esse! Voluptatum, officia.
+        </p>
+      </div>
+    </header>
+    <!-- article image -->
+    <div class="article">
+      <div class="article__img">
+        <div class="btn--play">
+          <img
+            src="https://icon-library.com/images/play-icon-vector/play-icon-vector-7.jpg"
+            alt=""
+          />
+        </div>
+        <h2>Top things to do in Los Angeles</h2>
+      </div>
     </div>
-    <div class="container">
-      <div class="card">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/4393444/pexels-photo-4393444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="rover"
-          />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-teal">Technology</span>
-          <h3>10 Reasons to Use Your Credit Card?</h3>
-          <p>An exploration into the truck's polarising design</p>
-          <div class="user">
-            <img
-              src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo"
-              alt="user"
-            />
-            <div class="user-info">
-              <h5>July Dec</h5>
-              <small>2h ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/618158/pexels-photo-618158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="ballons"
-          />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-purple">Popular</span>
-          <h3>How to Keep Going When You Don’t Know What’s Next</h3>
-          <p>
-            The future can be scary, but there are ways to deal with that fear.
-          </p>
-          <div class="user">
-            <img
-              src="https://lh3.googleusercontent.com/ogw/ADGmqu8sn9zF15pW59JIYiLgx3PQ3EyZLFp5Zqao906l=s32-c-mo"
-              alt="user"
-            />
-            <div class="user-info">
-              <h5>Eyup Ucmaz</h5>
-              <small>Yesterday</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/5999936/pexels-photo-5999936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="city"
-          />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-pink">Design</span>
-          <h3>10 Rules when you borrow money</h3>
-          <p>Dashboard Design Guidelines</p>
-          <div class="user">
-            <img
-              src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg"
-              alt="user"
-            />
-            <div class="user-info">
-              <h5>Carrie Brewer</h5>
-              <small>1w ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/4393444/pexels-photo-4393444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="rover"
-          />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-teal">Technology</span>
-          <h3>10 Reasons to Use Your Credit Card?</h3>
-          <p>An exploration into the truck's polarising design</p>
-          <div class="user">
-            <img
-              src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo"
-              alt="user"
-            />
-            <div class="user-info">
-              <h5>July Dec</h5>
-              <small>2h ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/618158/pexels-photo-618158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="ballons"
-          />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-purple">Popular</span>
-          <h3>How to Keep Going When You Don’t Know What’s Next</h3>
-          <p>
-            The future can be scary, but there are ways to deal with that fear.
-          </p>
-          <div class="user">
-            <img
-              src="https://lh3.googleusercontent.com/ogw/ADGmqu8sn9zF15pW59JIYiLgx3PQ3EyZLFp5Zqao906l=s32-c-mo"
-              alt="user"
-            />
-            <div class="user-info">
-              <h5>Eyup Ucmaz</h5>
-              <small>Yesterday</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/5999936/pexels-photo-5999936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="city"
-          />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-pink">Design</span>
-          <h3>10 Rules when you borrow money</h3>
-          <p>Dashboard Design Guidelines</p>
-          <div class="user">
-            <img
-              src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg"
-              alt="user"
-            />
-            <div class="user-info">
-              <h5>Carrie Brewer</h5>
-              <small>1w ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- mundet me u perdor ne raste kur te vyn -->
-    <!-- <div class="button--article">
-      <button class="buttons--main">
-        <a href="Article.html">Learn more</a>
-      </button> -->
-    </div>
-
-
-
-
+    <!-- jquery responsive navbar onclick button icon -->
     <script>
-      $('.fa-bars').click(function() {
-  $('.naviagtion__item__menu ul').toggleClass('active');
-});
+      $(".fa-bars").click(function () {
+        $(".naviagtion__item__menu ul").toggleClass("active");
+      });
     </script>
   </body>
 </html>
