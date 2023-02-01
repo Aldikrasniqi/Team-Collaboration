@@ -35,7 +35,7 @@ hr{
   align-items: center;
   align-content: center;
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(41, 115, 19, 0.414) 55%, rgba(18,92,18,0.9360119047619048) 95%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 35%, rgba(41, 115, 19, 0.6) 75%);
 }
 .naviagtion__item__logo img {
   display: block;
@@ -63,7 +63,8 @@ hr{
 }
 .naviagtion__item__menu li a {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   color: white;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -73,6 +74,20 @@ hr{
 }
 .vl {
   border-left: 2px solid var(--dark-green);
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: var(--dark-green);
 }
 /* deri qetu e bon copy */
 .titulli h1 {
