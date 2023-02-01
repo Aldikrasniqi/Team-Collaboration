@@ -79,7 +79,8 @@
 }
 .naviagtion__item__menu li a {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   color: #595959;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -89,6 +90,17 @@
 }
 .vl {
   border-left: 2px solid var(--dark-green);
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.active, .btn:hover {
+  background-color: rgba(45, 117, 36, 0.519);
 }
 /* rreshti i par */
 .row {
