@@ -41,6 +41,7 @@
 .pr {
   padding-right: 50px;
 }
+/* navigation bar */
 .navigation__item {
   padding: 30px;
 }
@@ -89,6 +90,7 @@
 .vl {
   border-left: 2px solid var(--dark-green);
 }
+/* rreshti i par */
 .row {
   display: flex;
   flex-direction: row;
@@ -97,6 +99,7 @@
   align-items: flex-start;
   align-content: space-around;
 }
+/* kolonat e para */
 .col__1 {
   flex-basis: 45%;
 }
@@ -114,6 +117,7 @@
 .col__1--buttons {
   padding: 30px 0 0 0;
 }
+/* buttonat */
 .col__1--buttons a {
   text-decoration: none;
   color: var(--bg-color);
@@ -158,6 +162,7 @@
   flex-grow: 1;
   margin: 30px;
 }
+/* kontenti rreth nesh */
 .item--content {
   color: black;
   text-align: left;
@@ -184,6 +189,7 @@
   font-size: 2.75em;
   font-weight: 700;
 }
+/* rreshtat */
 .history__row {
   display: flex;
   flex-direction: row;
@@ -207,13 +213,15 @@
   line-height: 1.6;
 }
 .history--content h2 {
+  font-size: 1.8em;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .history--content p {
   margin-bottom: 25px;
   color: var(--color-grey);
 }
+/* our story banner */
 .banner {
   background-color: var(--dark-green);
   max-width: 100%;
@@ -238,6 +246,7 @@
   font-size: 16px;
   background: none;
 }
+/* article news */
 .container {
   display: flex;
   flex-direction: row;
@@ -281,15 +290,7 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-.tag-teal {
-  background-color: var(--dark-green);
-  font-family: "Poppins", sans-serif;
-}
-.tag-purple {
-  background-color: var(--dark-green);
-  font-family: "Poppins", sans-serif;
-}
-.tag-pink {
+.tag-green {
   background-color: var(--dark-green);
   font-family: "Poppins", sans-serif;
 }
@@ -323,6 +324,11 @@
   text-align: center;
   margin: 40px 40px;
 }
+.button--article a {
+  color: white;
+  text-decoration: none;
+}
+/* fillimi i footerit */
 .footer {
   width: 100%;
   height: auto;
@@ -337,7 +343,6 @@
 .footer__row--logo{
   flex-basis: 30%;
 }
-
 .columns-1 {
   padding: 40px;
   font-family: "Poppins", sans-serif;
@@ -370,10 +375,9 @@
 .columns-1 ul li a:hover{
   text-decoration: none;  
 }
+/* mbarimi i footerit */
 @media (max-width: 576px) {
-  .naviagtion__item__menu i {
-    font-size: 10px;
-  }
+  /* columns responsive width,directions,font-sizs */
   .history__row {
     flex-direction: column-reverse;
   }
@@ -385,12 +389,9 @@
   }
   .row__columns h1 {
     font-size: 2em;
-  }
-  .navigation__item ul li {
-    display: none;
-  }
+  }  
   .naviagtion__item__logo img {
-    width: 350px;
+    width: 300px;
   }
   .navigation__item {
     padding: 20px;
@@ -398,9 +399,6 @@
   .col__1 {
     flex-basis: 50%;
     text-align: center;
-  }
-  .col__1 h1 {
-    font-size: 2.5em;
   }
   .col__1 p {
     margin-top: 20px;
@@ -418,6 +416,7 @@
   .card-body {
     min-height: 200px;
   }
+  /* footer */
   .columns-1{
     width: 100%;
     align-items: center;
@@ -429,6 +428,10 @@
 }
 
 @media (max-width: 768px) {
+  /* colona responsvie fonts size,direction, width, margins etc */
+  .col__1 h1{
+    font-size: 3em;
+  }
   .col__1 {
     flex-basis: 90%;
   }
@@ -447,6 +450,7 @@
   .container {
     flex-direction: column;
   }
+  /* footeri resoinsive */
   .columns--footer{
     flex-direction: column;
     align-items: left;
@@ -464,10 +468,7 @@
   }
 }
 @media (max-width: 991px) {
-  
-  .navigation__item ul li {
-    display: none;
-  }
+  /* colona responsive */
   .col__1 {
     flex-basis: 85%;
     align-items: center;
@@ -488,17 +489,54 @@
   }
 }
 @media (max-width: 1101px) {
+  /* navigation responsive starts */
   .naviagtion__item__menu i {
     display: block;
+    cursor: pointer;
+    color: #595959;
     font-size: 20px;
+    margin-right: 20px;
   }
-  .navigation__item ul {
+  .naviagtion__item__menu ul {
     display: none;
   }
-  .col__2 img {
+  .naviagtion__item__menu ul.active {
     display: block;
-    flex-basis: 40%;
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: all .3s ease-in-out;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
+  .naviagtion__item__menu li a {
+    display: block;
+    margin: 50px 40px;
+    font-size: 1.125em;
+    border-bottom: 1px solid var(--dark-green);
+  }
+  .menu--btn{
+    margin-left: 38px;
+    width: 75%;
+  }
+  .vl{
+    display: none;
+  }
+ /* navigations responsive ends */
+ /* ////////// col 1-2 starts  ////////// */
+  .col__2 img {
+    display: none;
+  }
+  .col__1{
+    flex-basis: 90%;
+    text-align: center;
+  }
+  /* ////// col ends ////// */
+  /* About Us starts */
   .history__col {
     flex-basis: 90%;
   }
@@ -508,6 +546,8 @@
   .history__row1 {
     flex-direction: column;
   }
+  /* about uss ends */
+  /* footeri responsive starts */
   .columns-1{
     text-align: center;
   }
@@ -521,4 +561,5 @@
     align-items: center;
     justify-content: center;
   }
+  /* footeri ends */
 }   

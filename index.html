@@ -21,7 +21,7 @@
 
     <!-- CSS animate aos on-scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="/script/script.js"></script>
+    <script src="script/script.js"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +35,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!-- navigation bar -->
@@ -200,7 +201,7 @@
           />
         </div>
         <div class="card-body">
-          <span class="tag tag-teal">Technology</span>
+          <span class="tag tag-green">Technology</span>
           <h3>10 Reasons to Use Your Credit Card?</h3>
           <p>An exploration into the truck's polarising design</p>
           <div class="user">
@@ -223,7 +224,7 @@
           />
         </div>
         <div class="card-body">
-          <span class="tag tag-purple">Popular</span>
+          <span class="tag tag-green">Popular</span>
           <h3>How to Keep Going When You Don’t Know What’s Next</h3>
           <p>
             The future can be scary, but there are ways to deal with that fear.
@@ -248,7 +249,7 @@
           />
         </div>
         <div class="card-body">
-          <span class="tag tag-pink">Design</span>
+          <span class="tag tag-green">Design</span>
           <h3>10 Rules when you borrow money</h3>
           <p>Dashboard Design Guidelines</p>
           <div class="user">
@@ -265,7 +266,9 @@
       </div>
     </div>
     <div class="button--article">
-      <button class="buttons--main">Learn more</button>
+      <button class="buttons--main">
+        <a href="Article.html">Learn more</a>
+      </button>
     </div>
 
     <!-- footeri mundesh me e mar copy ensar dhe jon __ per paget e tjera  -->
@@ -316,6 +319,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      $(".fa-bars").click(function () {
+        $(".naviagtion__item__menu ul").toggleClass("active");
+        $(".naviagtion__item__logo img").toggleClass("logoactive");
+      });
     </script>
   </body>
 </html>
