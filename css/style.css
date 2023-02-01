@@ -428,6 +428,9 @@
 }
 
 @media (max-width: 768px) {
+  .history--content h2{
+    font-size: 1.5em;
+  }
   /* colona responsvie fonts size,direction, width, margins etc */
   .col__1 h1{
     font-size: 3em;
@@ -466,6 +469,9 @@
     align-items: center;
     text-align: center;
   }
+  .history__col {
+    padding: 20px;
+  }
 }
 @media (max-width: 991px) {
   /* colona responsive */
@@ -489,6 +495,8 @@
   }
 }
 @media (max-width: 1101px) {
+
+
   /* navigation responsive starts */
   .naviagtion__item__menu i {
     display: block;
@@ -526,6 +534,7 @@
   .vl{
     display: none;
   }
+  
  /* navigations responsive ends */
  /* ////////// col 1-2 starts  ////////// */
   .col__2 img {
