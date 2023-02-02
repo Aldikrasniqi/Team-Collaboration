@@ -41,6 +41,9 @@
 .pr {
   padding-right: 50px;
 }
+.active1 {
+  color: var(--dark-green);
+}
 /* navigation bar */
 .navigation__item {
   padding: 30px;
@@ -91,17 +94,7 @@
 .vl {
   border-left: 2px solid var(--dark-green);
 }
-.btn {
-  border: none;
-  outline: none;
-  padding: 4px 8px;
-  font-size: 18px;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0);
-}
-.active, .btn:hover {
-  background-color: rgba(45, 117, 36, 0.519);
-}
+
 /* rreshti i par */
 .row {
   display: flex;
@@ -144,7 +137,7 @@
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-.buttons--2 a{
+.buttons--2 a {
   color: var(--dark-green);
 }
 .buttons--main {
@@ -340,6 +333,60 @@
   color: white;
   text-decoration: none;
 }
+/* fillimi i faqs */
+.faq-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+  font-family: 'Poppins',sans-serif;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+.hr-line {
+  width: 70%;
+  margin: auto;
+}
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 70%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body {
+  margin: auto;
+  width: 70%;
+  padding: auto;
+}
+.faq-page:hover {
+  background-color: #f9f9f9;
+}
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faq-page:after {
+  content: "\02795";
+  /* Unicode character per "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active-faqs:after {
+  content: "\2796";
+  /* Unicode characteri per "minus" sign (-) */
+}
+/* mbarimi i faqs */
 /* fillimi i footerit */
 .footer {
   width: 100%;
@@ -352,7 +399,7 @@
   align-items: center;
   align-content: space-around;
 }
-.footer__row--logo{
+.footer__row--logo {
   flex-basis: 30%;
 }
 .columns-1 {
@@ -360,14 +407,14 @@
   font-family: "Poppins", sans-serif;
   display: inline-block;
 }
-.columns-1 span{
+.columns-1 span {
   color: var(--bg-color);
 }
 .columns-1 p {
   color: var(--bg-color);
   margin-top: 30px;
 }
-.columns-1 h4{
+.columns-1 h4 {
   padding: 20px 0;
   font-size: 1.2em;
   color: var(--bg-color);
@@ -375,20 +422,22 @@
 }
 .columns-1 ul {
   list-style-type: none;
-
 }
 .columns-1 ul li {
   margin-top: 10px;
 }
-.columns-1 ul li a{
+.columns-1 ul li a {
   color: var(--bg-color);
   text-decoration: line-through;
 }
-.columns-1 ul li a:hover{
-  text-decoration: none;  
+.columns-1 ul li a:hover {
+  text-decoration: none;
 }
 /* mbarimi i footerit */
 @media (max-width: 576px) {
+  .faq-page{
+    width: 90%; 
+  }
   /* columns responsive width,directions,font-sizs */
   .history__row {
     flex-direction: column-reverse;
@@ -401,7 +450,7 @@
   }
   .row__columns h1 {
     font-size: 2em;
-  }  
+  }
   .naviagtion__item__logo img {
     width: 300px;
   }
@@ -429,7 +478,7 @@
     min-height: 200px;
   }
   /* footer */
-  .columns-1{
+  .columns-1 {
     width: 100%;
     align-items: center;
     text-align: center;
@@ -440,11 +489,17 @@
 }
 
 @media (max-width: 768px) {
-  .history--content h2{
+  .faq-body {
+    width: 90%;
+  }
+  .faq-page {
+    width: 90%;
+  }
+  .history--content h2 {
     font-size: 1.5em;
   }
   /* colona responsvie fonts size,direction, width, margins etc */
-  .col__1 h1{
+  .col__1 h1 {
     font-size: 3em;
   }
   .col__1 {
@@ -466,17 +521,17 @@
     flex-direction: column;
   }
   /* footeri resoinsive */
-  .columns--footer{
+  .columns--footer {
     flex-direction: column;
     align-items: left;
   }
   .columns-2 {
     flex-direction: column;
   }
-  .footer{   
+  .footer {
     flex-direction: column;
   }
-  .columns-1{
+  .columns-1 {
     width: 100%;
     align-items: center;
     text-align: center;
@@ -507,9 +562,8 @@
   }
 }
 @media (max-width: 1101px) {
-
-
   /* navigation responsive starts */
+  
   .naviagtion__item__menu i {
     display: block;
     cursor: pointer;
@@ -528,10 +582,10 @@
     top: 0;
     left: 0;
     background: #fff;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     padding: 10px;
     z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
   .naviagtion__item__menu li a {
     display: block;
@@ -539,20 +593,20 @@
     font-size: 1.125em;
     border-bottom: 1px solid var(--dark-green);
   }
-  .menu--btn{
+  .menu--btn {
     margin-left: 38px;
     width: 75%;
   }
-  .vl{
+  .vl {
     display: none;
   }
-  
- /* navigations responsive ends */
- /* ////////// col 1-2 starts  ////////// */
+
+  /* navigations responsive ends */
+  /* ////////// col 1-2 starts  ////////// */
   .col__2 img {
     display: none;
   }
-  .col__1{
+  .col__1 {
     flex-basis: 90%;
     text-align: center;
   }
@@ -569,18 +623,18 @@
   }
   /* about uss ends */
   /* footeri responsive starts */
-  .columns-1{
+  .columns-1 {
     text-align: center;
   }
-  .columns-1 h4{
+  .columns-1 h4 {
     text-align: center;
   }
   .columns-1 ul {
     text-align: center;
   }
-  .footer{
+  .footer {
     align-items: center;
     justify-content: center;
   }
   /* footeri ends */
-}   
+}
