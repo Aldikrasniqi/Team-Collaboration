@@ -1,4 +1,23 @@
 Script started on Thu Feb  2 10:59:23 2023
 [1m[7m%[27m[1m[0m                                                                          [0m[27m[24m[Jaldi@Aldis-MBP script % [K[?2004hnnode sc  main.js[?2004l
 test
-[1m[7m%[27m[1m[0m                                                                          [0m[27m[24m[Jaldi@Aldis-MBP script % [K[?2004h
+[1m[7m%[27m[1m[0m                                                                          [0m[27m[24m[Jaldi@Aldis-MBP script % [K[?2004hggit add .[9D         [9Dggit as  status[?2004l
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   ../Article.html[m
+	[31mmodified:   ../Ofertat.html[m
+	[31mmodified:   ../css/style.css[m
+	[31mmodified:   ../index.html[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmain[m
+	[31mmain.js[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                          [0m[27m[24m[Jaldi@Aldis-MBP script % [K[?2004hggit add .[?2004l
+[1m[7m%[27m[1m[0m                                                                          [0m[27m[24m[Jaldi@Aldis-MBP script % [K[?2004hggit commmi  it -m ; " faqs ad
