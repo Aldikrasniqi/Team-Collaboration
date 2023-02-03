@@ -335,15 +335,25 @@
 }
 /* fillimi i faqs */
 .faq-heading {
+  font-size: 2.5em;
   border-bottom: #777;
   padding: 20px 60px;
   font-family: 'Poppins',sans-serif;
 }
+.faq-paragraph {
+  border-bottom: #777;
+  padding: 0px 60px;
+  font-family: 'Poppins',sans-serif;
+  color: var(--color-grey);
+}
+
 .faq-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 90px;
 }
 .hr-line {
   width: 70%;
@@ -351,7 +361,7 @@
 }
 .faq-page {
   /* background-color: #eee; */
-  color: #444;
+  color: var(--text-color);
   cursor: pointer;
   padding: 30px 20px;
   width: 70%;
@@ -364,6 +374,10 @@
   margin: auto;
   width: 70%;
   padding: auto;
+}
+.faq-body p{
+  color: var(--color-grey);
+  margin-bottom: 10px;
 }
 .faq-page:hover {
   background-color: #f9f9f9;
@@ -378,7 +392,7 @@
   content: "\02795";
   /* Unicode character per "plus" sign (+) */
   font-size: 13px;
-  color: #777;
+  color: var(--color-grey);
   float: right;
   margin-left: 5px;
 }
@@ -438,6 +452,9 @@
   .faq-page{
     width: 90%; 
   }
+  .hr-line {
+    width: 90%;
+  }
   /* columns responsive width,directions,font-sizs */
   .history__row {
     flex-direction: column-reverse;
@@ -489,10 +506,19 @@
 }
 
 @media (max-width: 768px) {
+  .faq-heading{
+    padding: 20px;
+  }
+  .faq-paragraph{
+    padding: 20px;
+  }
   .faq-body {
     width: 90%;
   }
   .faq-page {
+    width: 100%;
+  }
+  .hr-line {
     width: 90%;
   }
   .history--content h2 {

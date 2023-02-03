@@ -89,7 +89,7 @@ header p {
   margin-top: 100px;
 }
 /* image starts */
-article{
+article {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ article{
   align-items: center;
   align-content: center;
 }
-.article__img{
+.article__img {
   background: url(https://images.pexels.com/photos/2464890/pexels-photo-2464890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   max-width: 85%;
   background-position: center;
@@ -109,7 +109,7 @@ article{
   border-radius: 5px;
   cursor: zoom-out;
 }
-.btn--play img{
+.btn--play img {
   position: absolute;
   left: 0;
   top: 0;
@@ -118,7 +118,7 @@ article{
   width: 120px;
   cursor: pointer;
 }
-.article__img h2{
+.article__img h2 {
   color: white;
   position: absolute;
   bottom: 0;
@@ -126,43 +126,43 @@ article{
   font-size: 1.8em;
   margin: 30px;
   font-weight: 700;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 /* image ends */
 
 /* inforamtion article starts */
-.row{
+.row {
   max-width: 90%;
   margin: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: space-around;
-  font-family: 'Latto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  font-family: "Latto", sans-serif;
   overflow: hidden;
   margin-top: 100px;
 }
-.info__col--image{
-  flex-basis:30%;
+.info__col--image {
+  flex-basis: 30%;
 }
 
-.info__col--image img{
+.info__col--image img {
   width: 300px;
   border-radius: 5px;
   height: 320px;
 }
-.info__col--content{
+.info__col--content {
   flex-basis: 70%;
   line-height: 1.8;
 }
-.info__col--content h2{
+.info__col--content h2 {
   color: var(--color-dark-blue);
   font-size: 3em;
   font-weight: 900;
 }
-.info__col--content p{
+.info__col--content p {
   color: var(--color-grey);
   font-size: 14px;
 }
@@ -198,7 +198,6 @@ article{
   line-height: 1.9;
   min-height: 300px;
 }
-
 .tag {
   background: #cccccc;
   border-radius: 50px;
@@ -252,7 +251,7 @@ article{
   align-items: center;
   align-content: space-around;
 }
-.footer__row--logo{
+.footer__row--logo {
   flex-basis: 30%;
 }
 .columns-1 {
@@ -260,14 +259,14 @@ article{
   font-family: "Poppins", sans-serif;
   display: inline-block;
 }
-.columns-1 span{
+.columns-1 span {
   color: var(--bg-color);
 }
 .columns-1 p {
   color: var(--bg-color);
   margin-top: 30px;
 }
-.columns-1 h4{
+.columns-1 h4 {
   padding: 20px 0;
   font-size: 1.2em;
   color: var(--bg-color);
@@ -275,44 +274,43 @@ article{
 }
 .columns-1 ul {
   list-style-type: none;
-
 }
 .columns-1 ul li {
   margin-top: 10px;
 }
-.columns-1 ul li a{
+.columns-1 ul li a {
   color: var(--bg-color);
   text-decoration: line-through;
 }
-.columns-1 ul li a:hover{
-  text-decoration: none;  
+.columns-1 ul li a:hover {
+  text-decoration: none;
 }
 @media (max-width: 1101px) {
-  .columns-1{
+  .columns-1 {
     text-align: center;
   }
-  .columns-1 h4{
+  .columns-1 h4 {
     text-align: center;
   }
   .columns-1 ul {
     text-align: center;
   }
-  .footer{
+  .footer {
     align-items: center;
     justify-content: center;
   }
   .container {
     flex-direction: column;
   }
-  .info__col--image{
+  .info__col--image {
     flex-basis: 100%;
   }
-  .info__col--image img{
+  .info__col--image img {
     width: 100%;
     height: 480px;
   }
-  .info__col--content{
-    flex-basis: 100%;
+  .info__col--content {
+    flex-basis: 95%;
     text-align: center;
   }
   /* naviagiton reponsive */
@@ -358,7 +356,10 @@ article{
     display: none;
   }
 }
-@media(max-width: 769px){
+@media (max-width: 769px) {
+  .info__col--content h2 {
+    font-size: 2.5em;
+  }
   .naviagtion__item__logo img {
     width: 400px;
   }
@@ -367,17 +368,18 @@ article{
   }
 }
 @media (max-width: 576px) {
-  .columns--footer{
+  
+  .columns--footer {
     flex-direction: column;
     align-items: left;
   }
   .columns-2 {
     flex-direction: column;
   }
-  .footer{   
+  .footer {
     flex-direction: column;
   }
-  .columns-1{
+  .columns-1 {
     width: 100%;
     align-items: center;
     text-align: center;

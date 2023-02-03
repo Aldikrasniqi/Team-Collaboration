@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    /* main color */
+    --blue: #007bff;
+    --green: #28a745;
+    --dark-green: #166941;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+    --color-grey: #595959;
+    /* font family */
+    /* font-family: "Poppins", sans-serif; */
+  }
