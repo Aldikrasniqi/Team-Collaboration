@@ -242,6 +242,10 @@
 .banner__content h2 {
   color: #fff;
 }
+.banner__content a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
 .banner__content button {
   padding: 10px 35px;
   border: 1px solid #fff;
