@@ -226,6 +226,11 @@
   margin-bottom: 25px;
   color: var(--color-grey);
 }
+.history--content a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid var(--bg-color);
+}
 /* our story banner */
 .banner {
   background-color: var(--dark-green);
@@ -477,6 +482,7 @@
   }
   .navigation__item {
     padding: 20px;
+    flex-wrap: nowrap;
   }
   .col__1 {
     flex-basis: 50%;
