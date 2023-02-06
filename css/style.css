@@ -226,7 +226,7 @@
   margin-bottom: 25px;
   color: var(--color-grey);
 }
-.history--content a{
+.history--content a {
   color: white;
   text-decoration: none;
   border-bottom: 1px solid var(--bg-color);
@@ -347,12 +347,12 @@
   font-size: 2.5em;
   border-bottom: #777;
   padding: 20px 60px;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .faq-paragraph {
   border-bottom: #777;
   padding: 0px 60px;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--color-grey);
 }
 
@@ -361,7 +361,7 @@
   justify-content: flex-start;
   align-content: flex-start;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 90px;
 }
 .hr-line {
@@ -384,7 +384,7 @@
   width: 70%;
   padding: auto;
 }
-.faq-body p{
+.faq-body p {
   color: var(--color-grey);
   margin-bottom: 10px;
 }
@@ -458,8 +458,8 @@
 }
 /* mbarimi i footerit */
 @media (max-width: 576px) {
-  .faq-page{
-    width: 90%; 
+  .faq-page {
+    width: 90%;
   }
   .hr-line {
     width: 90%;
@@ -516,10 +516,10 @@
 }
 
 @media (max-width: 768px) {
-  .faq-heading{
+  .faq-heading {
     padding: 20px;
   }
-  .faq-paragraph{
+  .faq-paragraph {
     padding: 20px;
   }
   .faq-body {
@@ -599,7 +599,6 @@
 }
 @media (max-width: 1101px) {
   /* navigation responsive starts */
-  
   .naviagtion__item__menu i {
     display: block;
     cursor: pointer;
