@@ -26,7 +26,6 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   align-content: center;
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 35%, rgba(41, 115, 19, 0.6) 75%);
 }
 .naviagtion__item__logo img {
   display: block;
@@ -52,11 +51,11 @@ font-family: 'Poppins', sans-serif;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
-.naviagtion__item__menu li a {
+li a {
   text-decoration: none;
   margin-right: 10px;
   margin-left: 10px;
-  color: white;
+  color: #595959;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
@@ -70,13 +69,18 @@ font-family: 'Poppins', sans-serif;
   border: none;
   outline: none;
   padding: 4px 8px;
+  cursor: pointer;
   font-size: 18px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0);
 }
+
 /* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
+.active-joni, .btn:hover {
   background-color: var(--dark-green);
+}
+.btn:hover a, .active-joni a {
+  color: var(--bg-color);
 }
 /* test */
 .col2 {
@@ -93,4 +97,26 @@ font-family: 'Poppins', sans-serif;
 }
 .col1, .col2 {
   width: 45%;
+  background-color: aqua;
+  border: 2pt solid black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+  }
+body {
+  background-color: #28a745;
+}
+.lista_qmimi ul {
+  padding-left: 10%;
+}
+.col__content button {
+  padding: 10px 20px;
+  background-color: var(--dark-green);
+  margin: 15px 40%;
+  border-radius: 15px;
+  color: var(--bg-color);
+  cursor: pointer;
+
+  
+  
 }
