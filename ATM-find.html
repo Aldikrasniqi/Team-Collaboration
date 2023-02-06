@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join our team</title>
+    <title>Nearest ATM</title>
+    <link rel="stylesheet" href="css/atm-find.css" />
     <script
       src="https://kit.fontawesome.com/ab0475dd2e.js"
       crossorigin="anonymous"
@@ -16,7 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/join-style.css" />
     <!-- CSS animate aos on-scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -39,7 +39,7 @@
     <div class="navgiation">
       <div class="navigation__item">
         <div class="naviagtion__item__logo">
-          <img src="images/logo-north.png" alt="" />
+          <img src="images/background-logo-remove.png" alt="" />
         </div>
         <div class="naviagtion__item__menu">
           <i class="fa-solid fa-bars" id="icon"></i>
@@ -47,7 +47,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="Historia.html">Historia</a></li>
             <li><a href="Ofertat.html">Ofertat</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="Ofertat.html">Pricing</a></li>
             <span class="vl"></span>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook"></i>
@@ -56,67 +56,21 @@
       </div>
     </div>
     <header>
-      <div class="row">
-        <div class="col__1">
-          <div class="col--content">
-            <h1 style="font-size: 3em; color: var(--dark-green)">
-              Join our team
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-              vero saepe minima. Praesentium, eligendi. Doloribus corrupti sunt
-              necessitatibus saepe?
-            </p>
-            <div class="content--group">
-              <input type="email" placeholder="Enter You Email" />
-              <button type="submit"><a href="#">Get Started</a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col__2">
-          <div class="col--image">
-            <img
-              src="https://blog.bonus.ly/hubfs/team-building-activities-banner.png"
-              alt=""
-            />
-          </div>
+      <div class="content">
+        <h1>Mastercard® ATM Locator</h1>
+        <p>You’re never far from a Mastercard, Maestro or Cirrus ATM.</p>
+        <div class="content__group">
+          <h2>Enter an Address</h2>
+          <input
+            type="address"
+            placeholder="Enter The Adress to search the nearest location"
+          />
+          <br />
+          <button>Find</button>
+          <a href="ATM-find.html">RESET</a>
         </div>
       </div>
     </header>
-    <section>
-      <div class="section__title">
-        <h1>The best Developers make the best products</h1>
-      </div>
-      <div class="container">
-        <div class="box">
-            <div class="imgBox">
-                <img src="images/Aldii.jpg" alt="">
-            </div>
-            <div class="content">
-                <h2>Aldi Krasniqi</br>
-                <span>Team Lead Developer</span></h2>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBox">
-                <img src="images/Joni.JPG" alt="">
-            </div>
-            <div class="content">
-                <h2>Jon Fejzullahu</br>
-                <span>Data Base Developer</span></h2>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBox">
-                <img src="images/Ensarii.jpg" alt="">
-            </div>
-            <div class="content">
-                <h2>Ensar Murati</br>
-                <span>Front End Developer</span></h2>
-            </div>
-        </div>
-    </div>
-    </section>
     <div class="footer">
       <div class="footer__row--logo">
         <div class="columns-1">
@@ -160,7 +114,6 @@
         </div>
       </div>
     </div>
-    <!-- jquery responsive navbar onclick button icon -->
     <script>
       $(".fa-bars").click(function () {
         $(".naviagtion__item__menu ul").toggleClass("active");

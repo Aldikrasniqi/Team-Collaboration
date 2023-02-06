@@ -18,6 +18,7 @@ html {
   /* font-family: "Poppins", sans-serif; */
 }
 body {
+    background: url(https://img.freepik.com/free-vector/shiny-white-gray-background-with-wavy-lines_1017-25101.jpg?w=2000);
   font-family: "Poppins", sans-serif;
 }
 /* navbar  starts*/
@@ -67,134 +68,47 @@ body {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-/* navbar ends */
-
-/* ///// row starts ///// */
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+header{
+    margin-top: 50px;
 }
-.col__1 {
-  flex-basis: 45%;
+.content{
+    padding: 50px;
+    margin-left: 80px;
 }
-.col--content {
-  padding: 50px;
-  line-height: 1.3;
+.content h1{
+    color: var(--dark-green);
 }
-.col--content p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: var(--color-grey);
+.content__group input{
+    background: var(--bg-color);
+    border: none;
+    border-radius: 20px;
+    width: 450px;
+    margin: 30px 0 20px 0;
+    padding: 12px 10px;
 }
-.content--group input:focus {
-  outline: none;
+.content__group button{
+    background: var(--dark-green);
+    border: none;
+    color: white;
+    padding: 10px 55px;
+    margin-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
 }
-.content--group input {
-  border-radius: 5px 0 0 5px;
+.content__group a{
+    color: var(--color-grey);
 }
-.content--group input,
-button {
-  padding: 10px 20px;
-  border: 1px solid var(--dark-green);
+.content__group input:focus {
+    outline: var(--dark-green);
+  }
+.content h1{
+    font-size: 3em;
+    font-weight: 600;
 }
-.content--group button {
-  margin: -5px;
-  background-color: var(--dark-green);
-  border-radius: 0 5px 5px 0;
+.content p {
+    color: var(--color-grey);
 }
-.content--group button a {
-  text-decoration: none;
-  color: var(--bg-color);
-}
-.col__2 {
-  flex-basis: 45%;
-}
-.col__2 img {
-  max-width: 100%;
-}
-.section__title {
-  max-width: 800px;
-}
-.section__title h1 {
-  font-size: 2.5em;
-  padding: 60px 70px 30px 80px;
-  color: var(--dark-green);
-}
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.container .box {
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  margin: 1.6rem;
-}
-
-.container .box:hover .imgBox {
-  transform: translate(0, -3.5rem);
-}
-
-.container .box:hover .content {
-  transform: translate(0, 3.5em);
-}
-
-.imgBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-}
-
-.imgBox img {
-  width: 20rem;
-  height: 20rem;
-  object-fit: cover;
-  resize: both;
-}
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 1;
-  align-items: flex-end;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-}
-.content h2 {
-  display: block;
-  font-size: 2rem;
-  color: var(--dark-green);
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: 1px;
-}
-
-.content span {
-  color: #555;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-/* row ends */
-/* footer starts */
+/* footer */
 .footer {
   margin-top: 100px;
   width: 100%;
@@ -243,6 +157,9 @@ button {
 }
 /* .... footer ends ...... */
 @media (max-width: 1101px) {
+    .naviagtion__item__logo img {
+        max-width: 70%;
+    }
   /* naviagiton reponsive */
   .naviagtion__item__menu i {
     margin-left: 40px;
@@ -285,20 +202,43 @@ button {
   .vl {
     display: none;
   }
+  .navigation__item{
+    flex-wrap: nowrap
+  }
+  .columns-1 {
+    text-align: left;
+  }
+  .columns-1 h4 {
+    text-align: left;
+  }
+  .columns-1 ul {
+    text-align: left;
+  }
+  .footer {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 769px) {
+    .content{
+        padding: 30px;
+        margin-left: 0px;
+    }
   .naviagtion__item__logo img {
-    width: 600px;
+    width: 400px;
   }
   .col__2 img {
     width: 100%;
   }
+  
 }
 @media (max-width: 576px) {
+    .content__group input{
+        width: 350px;
+        margin: 30px 0 20px 0;
+        padding: 8px 10px;
+    }
   /* navigation */
-  .naviagtion__item__logo img {
-    width: 250px;
-  }
   .naviagtion__item__menu ul.active {
     width: 250px;
   }
