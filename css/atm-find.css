@@ -83,7 +83,7 @@ header{
     border: none;
     border-radius: 20px;
     width: 450px;
-    margin: 30px 0 20px 0;
+    margin: 20px 0 25px 0;
     padding: 12px 10px;
 }
 .content__group button{
@@ -97,6 +97,10 @@ header{
 }
 .content__group a{
     color: var(--color-grey);
+}
+.content__group h2{
+  font-weight: 600;
+
 }
 .content__group input:focus {
     outline: var(--dark-green);
@@ -234,7 +238,7 @@ header{
 }
 @media (max-width: 576px) {
     .content__group input{
-        width: 350px;
+        width: 300px;
         margin: 30px 0 20px 0;
         padding: 8px 10px;
     }
