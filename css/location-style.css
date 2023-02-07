@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 html {
   font-size: 100%;
@@ -17,11 +18,7 @@ html {
   /* font family */
   /* font-family: "Poppins", sans-serif; */
 }
-body {
-    background: url(https://img.freepik.com/free-vector/shiny-white-gray-background-with-wavy-lines_1017-25101.jpg?w=2000);
-  font-family: "Poppins", sans-serif;
-}
-/* navbar  starts*/
+/* navbar */
 .navigation__item {
   padding: 30px;
 }
@@ -68,18 +65,55 @@ body {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-header{
-    margin-top: 50px;
+/* header */
+.header__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.header__title h1 {
+  font-weight: 600;
+  font-size: 3em;
+  color: var(--dark-green);
+}
+.header__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+.row--content {
+  margin-top: 50px;
+}
+.row--content h2 {
+  font-weight: 300;
+}
+.row--content span {
+  color: var(--color-grey);
+}
+.content--adress {
+  margin-top: 50px;
 }
 .content{
-    padding: 50px;
-    margin-left: 80px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.row{
+    margin-top: 90px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 }
 .content h1{
     color: var(--dark-green);
 }
 .content__group input{
-    background: var(--bg-color);
+    background: #e0dcdc;
+    color: black;
     border: none;
     border-radius: 20px;
     width: 450px;
@@ -100,17 +134,14 @@ header{
 }
 .content__group h2{
   font-weight: 600;
-
+  color: var(--color-grey);
 }
 .content__group input:focus {
-    outline: var(--dark-green);
+    outline: none;
   }
 .content h1{
     font-size: 3em;
     font-weight: 600;
-}
-.content p {
-    color: var(--color-grey);
 }
 /* footer */
 .footer {
@@ -159,11 +190,10 @@ header{
 .columns-1 ul li a:hover {
   text-decoration: none;
 }
-/* .... footer ends ...... */
 @media (max-width: 1101px) {
-    .naviagtion__item__logo img {
-        max-width: 70%;
-    }
+  .naviagtion__item__logo img {
+    max-width: 70%;
+  }
   /* naviagiton reponsive */
   .naviagtion__item__menu i {
     margin-left: 40px;
@@ -206,8 +236,8 @@ header{
   .vl {
     display: none;
   }
-  .navigation__item{
-    flex-wrap: nowrap
+  .navigation__item {
+    flex-wrap: nowrap;
   }
   .columns-1 {
     text-align: left;
@@ -224,9 +254,14 @@ header{
   }
 }
 @media (max-width: 769px) {
+    .location__frame iframe{
+        width: 100%;
+        padding: 10px;
+    }
     .content{
-        padding: 30px;
+        padding: 0px;
         margin-left: 0px;
+        text-align: center;
     }
   .naviagtion__item__logo img {
     width: 400px;
@@ -237,7 +272,7 @@ header{
 }
 @media (max-width: 576px) {
     .content__group input{
-        width: 300px;
+        width: 350px;
         margin: 30px 0 20px 0;
         padding: 8px 10px;
     }
