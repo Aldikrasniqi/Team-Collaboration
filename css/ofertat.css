@@ -109,43 +109,32 @@ body {
 .lista_qmimi ul {
   padding-left: 10%;
 }
+.button-btn{
+  text-align: center;
+  margin: 20px auto;
+}
 .button-btn button {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1pt black;
   padding: 10px 20px;
-  background-color: var(--dark-green);
-  margin: 30px auto 30px auto;
-  border-radius: 15px;
-  color: var(--bg-color);
   cursor: pointer;
-  margin-left: 40%; 
+  font-size: 18px;
+  border-radius: 15px;
+}
+.button-btn button:hover {
+  background-color: var(--dark-green);
+}
+.button-btn button:hover a {
+  color: #ffffff;
 }
 
-.button-btn a {
-  position: absolute;
-  visibility: hidden;
-  border-radius: 15px;
-  color: var(--bg-color);
-  padding: 10px 20px;
-  background-color: var(--dark-green);
-  margin: 30px auto 30px auto;
-  border-radius: 15px;
-  color: var(--bg-color);
-  cursor: pointer;
-}
 
-.button-btn:hover a {
-  visibility: visible;
-  position: relative;
-  right: 120px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 15px;
-  color: var(--bg-color);
-}
 /* css per divin e titullit */
 .titulli {
   text-align: center;
   margin: 30px 10px;
 }
+
 /* css per div baben 2 */
 .divbaba2 {
 	display: flex;
@@ -160,9 +149,13 @@ body {
 
 .col21, .col22, .col23{
   background-color: aqua;
-  width: 29%;
+  width: 30%;
   border: 2pt solid black;
   border-radius: 15px;
   padding: 15px;
   margin-top: 10px;
 }
+.col__content2 ul li {
+  margin-left: 20px;
+}
+
