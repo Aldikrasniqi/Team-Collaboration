@@ -109,14 +109,60 @@ body {
 .lista_qmimi ul {
   padding-left: 10%;
 }
-.col__content button {
+.button-btn button {
   padding: 10px 20px;
   background-color: var(--dark-green);
-  margin: 15px 40%;
+  margin: 30px auto 30px auto;
   border-radius: 15px;
   color: var(--bg-color);
   cursor: pointer;
+  margin-left: 40%; 
+}
 
-  
-  
+.button-btn a {
+  position: absolute;
+  visibility: hidden;
+  border-radius: 15px;
+  color: var(--bg-color);
+  padding: 10px 20px;
+  background-color: var(--dark-green);
+  margin: 30px auto 30px auto;
+  border-radius: 15px;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.button-btn:hover a {
+  visibility: visible;
+  position: relative;
+  right: 120px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: var(--bg-color);
+}
+/* css per divin e titullit */
+.titulli {
+  text-align: center;
+  margin: 30px 10px;
+}
+/* css per div baben 2 */
+.divbaba2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+  margin: 50px 0px 15px 0px;
+  /* text-align: center; */
+}
+
+.col21, .col22, .col23{
+  background-color: aqua;
+  width: 29%;
+  border: 2pt solid black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
 }
