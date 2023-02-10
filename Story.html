@@ -54,7 +54,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="about">
+      <div
+        class="about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1900"
+      >
         <div class="about__content">
           <span>2023 | ACTIVITION</span>
           <h2>
@@ -72,7 +77,13 @@
         </div>
       </div>
 
-      <div class="idea">
+      <div
+        class="idea"
+        class="about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1900"
+      >
         <div class="idea__content">
           <h1>The Idea of Story</h1>
           <p>
@@ -85,8 +96,11 @@
         </div>
       </div>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script/script.js"></script>
     <script>
+      AOS.init();
+
       $(".fa-bars").click(function () {
         $(".naviagtion__item__menu ul").toggleClass("active");
       });

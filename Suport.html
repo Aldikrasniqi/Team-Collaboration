@@ -121,19 +121,110 @@
         </div>
       </div>
     </div>
-    <h1 class="center__title--contat">Na kontaktoni</h1>
-    <div class="contact__title">
-      <span>Na Kontaktoni</span>
-      <p>
-        Na kontaktoni me pyetjet tuaja rreth shërbimeve të TEB Bank.
-        Përfaqësuesit tanë janë të gatshëm t'u përgjigjen pyetjeve tuaja.
-      </p>
+    <div class="form--contact">
+      <div
+        class="left--img"
+        class="about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1900"
+      ></div>
+      <form id="myForm">
+        <div class="form-group">
+          <div class="contact__title">
+            <span>Na Kontaktoni</span>
+            <p>
+              Na kontaktoni me pyetjet tuaja rreth shërbimeve të TEB Bank.
+              Përfaqësuesit tanë janë të gatshëm t'u përgjigjen pyetjeve tuaja.
+            </p>
+          </div>
+          <label for="name">Emri juaj:</label>
+          <input type="text" id="name" name="name" placeholder="Emri juaj" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email i juaj:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email i juaj"
+          />
+          <span id="emailError" style="display: none; color: red"
+            >Jepni nje email te sakt</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="subject">Subjecti juaj:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subjecti juaj"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Mesazhi juaj:</label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Mesazhi juaj"
+          />
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
     </div>
-
+    <div class="footer">
+      <div class="footer__row--logo">
+        <div class="columns-1">
+          <img
+            src="https://www.northwest-bank.com/assets/img/northwest-bank-logo-white.svg"
+            width="250px"
+            alt=""
+          />
+          <p>Routing Number 21213248563</p>
+          <p>Adress:</p>
+          <span>Lorem Ipsum 21 Street </span>
+        </div>
+      </div>
+      <div class="footer__row">
+        <div class="columns-1">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="Story.html">Our Story</a></li>
+            <li><a href="Article.html">News</a></li>
+            <li><a href="Join.html">Join Our Team</a></li>
+            <li><a href="Suport.html">Disclosures</a></li>
+          </ul>
+        </div>
+        <div class="columns-1">
+          <h4>CONNECT</h4>
+          <ul>
+            <li><a href="ATM-find.html">Find An ATM</a></li>
+            <li><a href="Location.html">Locations</a></li>
+            <li><a href="Suport.html">Contact Us</a></li>
+            <li><a href="Suport.html">Forums</a></li>
+          </ul>
+        </div>
+        <div class="columns-1">
+          <h4>SUPORTS</h4>
+          <ul>
+            <li><a href="index.html">Frequently Asked Questions</a></li>
+            <li><a href="Suport.html">Report an issue</a></li>
+            <li><a href="Suport.html">Lost or Stolen Card</a></li>
+            <li><a href="Suport.html">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script/script.js"></script>
     <script>
+      AOS.init();
       $(".fa-bars").click(function () {
         $(".naviagtion__item__menu ul").toggleClass("active");
       });
     </script>
+    <script src="script/validation.js"></script>
   </body>
 </html>
