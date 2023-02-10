@@ -516,6 +516,7 @@
 }
 
 @media (max-width: 768px) {
+
   .faq-heading {
     padding: 20px;
   }
@@ -555,6 +556,9 @@
   }
   .container {
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   /* footeri resoinsive */
   .columns--footer {
