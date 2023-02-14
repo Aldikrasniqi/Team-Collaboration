@@ -35,6 +35,13 @@
   margin-bottom: 1rem;
   padding-left: 120px;
 }
+.form-group span {
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+}
+.form-group a{
+  color: var(--dark-green);
+}
 form {
   width: 31.25rem;
   position: relative;
