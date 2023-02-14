@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Sign up</title>
     <script
       src="https://kit.fontawesome.com/ab0475dd2e.js"
       crossorigin="anonymous"
@@ -29,7 +29,41 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/signup.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="form--contact">
+      <form id="myForm" action="Login.html">
+        <div class="form-group">
+          <div class="contact__title">
+            <span>Sign Up, <br />Lets get started</span>
+          </div>
+          <label for="name">Username :</label>
+          <input type="text" id="name" name="name" placeholder="Username" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="email">Password :</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+        </div>
+        <input type="submit" value="Get started" id="submit" />
+      </form>
+      <div
+        class="left--img"
+        class="about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1900"
+      ></div>
+    </div>
+  </body>
+  <script src="script/signup-validate.js"></script>
 </html>
