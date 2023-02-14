@@ -6,7 +6,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   
   if (emailInput.value === 'admin@gmail.com' && passwordInput.value === 'admin') {
-    window.location.href = 'https://example.com/admin';
+    window.location.href = 'template/index.html';
   } else {
     alert('Invalid email or password');
   }
