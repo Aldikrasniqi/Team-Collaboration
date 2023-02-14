@@ -32,6 +32,36 @@
     <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    asdasd test
+    <div class="form--contact">
+      <form id="myForm" action="Login.html">
+        <div class="form-group">
+          <div class="contact__title">
+            <span>Welcome to the Northwest-bank, <br />Log in</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="email">Password :</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+        </div>
+        <input type="submit" value="Log in" id="submit" />
+      </form>
+      <div
+        class="left--img"
+        class="about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1900"
+      ></div>
+    </div>
   </body>
+  <script src="script/login-validate.js"></script>
 </html>

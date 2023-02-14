@@ -1,16 +1,105 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    /* main color */
-    --blue: #007bff;
-    --green: #28a745;
-    --dark-green: #166941;
-    --text-color: #000000;
-    --bg-color: #ffffff;
-    --color-grey: #595959;
-    /* font family */
-    /* font-family: "Poppins", sans-serif; */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* main color */
+  --blue: #007bff;
+  --green: #28a745;
+  --dark-green: #166941;
+  --text-color: #000000;
+  --bg-color: #ffffff;
+  --color-grey: #595959;
+  /* font family */
+  /* font-family: "Poppins", sans-serif; */
+}
+.contact__title{
+  padding-bottom: 40px;
+}
+.contact__title span{
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+.form--contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 100vh;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-left: 120px;
+}
+form {
+  width: 31.25rem;
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+input,
+label {
+  width: 35vw;
+  display: block;
+}
+p,
+placeholder,
+input,
+label{
+  font-family: 'Poppins';
+}
+.form-group input {
+  color: var(--primary-color);
+  font-weight: 500;
+  background: var(--bg-color);
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  font-size: 0.875em;
+  padding: 0.3rem 0;
+  margin-bottom: 1rem;
+  outline: none;
+}
+#submit {
+  width: 140px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px 20px;
+  background: var(--text-color);
+  color: white;
+  border: black;
+  margin-left: 120px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+}
+.left--img {
+  background: url(https://images.pexels.com/photos/3584974/pexels-photo-3584974.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  width: 50vw;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 769px) {
+  input,
+textarea,
+label {
+  width: 70vw;
+  display: block;
+}
+.left--img{
+  display: none;
+}
+.form-group{
+  padding-left: 30px;
+}
+#submit{
+  margin-left: 30px;
+}
+}
