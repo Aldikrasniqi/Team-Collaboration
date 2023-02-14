@@ -250,5 +250,30 @@ ol li {
       margin-top: 10px;
       background-color: var(--greenjoni);
     }
+    .col__image img{
+      margin: 10px auto 10px auto;
+      max-width: 100%;    
+    }
+    .col__image {
+      padding: auto;
+    }
+    p {
+      font-size: 1em;
+    }
+    .naviagtion__item__logo img {
+      width: 280px;
+    }
+    .navigation__item {
+      flex-wrap: nowrap;
+      padding: 20px;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(18,92,18,0.9360119047619048) 95%);
+    }
+    .naviagtion__item__menu i {
+      display: block;
+    }
 
 }
+
+
+  
